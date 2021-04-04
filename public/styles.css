@@ -1,0 +1,58 @@
+:root {
+    font-size: 18px;
+    
+}
+
+h1, h2, h3, p {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+.container-create {
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.blog-wrapper {
+    max-width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 25px 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.blog {
+    font-size: 1.3rem;
+}
+
+.delete {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 5px 10px;
+    columns: #ccc;
+
+}
+
+.all-blogs {
+    padding: 50px;
+}
+
+.create-btn {
+    margin-top: 20px;
+}
+
+#btn-open {
+    padding: 5px 20px;
+}
+
+.detail-container {
+    margin: 0 auto;
+    padding: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+

@@ -1,0 +1,21 @@
+
+html(lang="en")
+    head
+        title Blog Website
+        link(rel="stylesheet", href="/static/styles.css")
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    body 
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='/') My Blog
+
+            #navbarNav
+                ul.navbar-nav
+                    li.nav-item.active
+                        a.nav-link(href='#') Home
+                    li.nav-item
+                        a.nav-link(href='/create') Create
+                    li.nav-item
+                        a.nav-link(href='/blogs') All Blogs
+
+        block content

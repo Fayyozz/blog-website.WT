@@ -1,0 +1,19 @@
+extends layout.pug 
+
+block content 
+    .container-create
+        h1.display-5 Write your blog here.
+
+        form.form(action="/create" method="POST")
+            div.form-group
+                label Title 
+                input.form-control(type="text" name="title")
+
+            div.form-group
+                label Body 
+                textarea.form-control.form-control-lg#exampleFormControlTextarea1(name="blog-body", type="text", rows=7) 
+
+            button(type="submit" class="btn btn-primary mb-2") Create Blog 
+
+
+
