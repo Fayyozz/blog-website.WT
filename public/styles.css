@@ -116,3 +116,8 @@ h1, h2, h3, p {
     letter-spacing: 1px;
 }
 
+.info {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+}

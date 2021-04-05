@@ -72,6 +72,15 @@ app.get("/blogs/:id", (req, res) => {
 
 })
 
+app.get("/api/v1/blogs", (req, res) => {
+    fs.readFile("./data/blogs.json", (err, data) => {
+        if (err) throw err
+
+        const blogs = JSON.parse(data)
+
+        res.json(blogs)
+    })
+})
 
 app.get("/:id/delete", (req, res) => {
     const id = req.params.id
@@ -90,10 +99,10 @@ app.get("/:id/delete", (req, res) => {
     })
 })
 
-app.listen(3000, err => {
+app.listen(8000, err => {
     if (err) console.log(err);
 
-    console.log("server is running on port 3000...");
+    console.log("server is running on port 8000...");
 })
 
 function id () {
