@@ -52,7 +52,7 @@ h1, h2, h3, p {
 .detail-container {
     margin: 0 auto;
     padding: 70px;
-    max-width: 80%;
+    max-width: 70%;
     padding: 55px;
 }
 
@@ -104,10 +104,15 @@ h1, h2, h3, p {
 }
 
 .detail-title {
+    font-size: 40px;
+    font-weight: 500;
     text-align: left;
     padding-bottom: 40px;
 }
 .detail-body {
     text-align: left;
+    font-size: 23px;
+    line-height: 45px;
+    letter-spacing: 1px;
 }
 
