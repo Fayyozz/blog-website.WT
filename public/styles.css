@@ -13,12 +13,12 @@ h1, h2, h3, p {
 }
 
 .blog-wrapper {
-    max-width: 75%;
+    max-width: 85%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
-    margin: 25px 30px;
+    padding: 15px 0px;
+    margin: 20px 0px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -34,8 +34,11 @@ h1, h2, h3, p {
 
 }
 
-.all-blogs {
+#all-blogs {
     padding: 50px;
+    width: 100%;
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .create-btn {
@@ -49,10 +52,62 @@ h1, h2, h3, p {
 .detail-container {
     margin: 0 auto;
     padding: 70px;
-    justify-content: center;
-    align-items: center;
+    max-width: 80%;
+    padding: 55px;
+}
+
+.container {
+    margin-top: 50px;
 }
 
 
+.blog-t-b {
+    display: block;
+    overflow: hidden;
+    max-width: 80%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
+.title {
+    display: block;
+    font-size: 28px;
+    overflow: hidden;
+    max-width: 80%;
+    color: black;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.body {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.buttons {
+    margin-left: 20px;
+    display: flex;
+    flex-direction:row;
+}
+
+.error {
+    display: inline-block;
+    padding: 15px;
+    color: red;
+}
+
+.success {
+    display: inline-block;
+    padding: 15px;
+    color:green;
+}
+
+.detail-title {
+    text-align: left;
+    padding-bottom: 40px;
+}
+.detail-body {
+    text-align: left;
+}
 

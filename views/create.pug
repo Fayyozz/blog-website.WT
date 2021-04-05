@@ -4,16 +4,22 @@ block content
     .container-create
         h1.display-5 Write your blog here.
 
+        if (error)
+            p.error Please enter valid input. Try again!
+
+        if (success) 
+            p.success Blog is published. Check it out!
+
         form.form(action="/create" method="POST")
             div.form-group
-                label Title 
+                label Blog Title 
                 input.form-control(type="text" name="title")
 
             div.form-group
-                label Body 
-                textarea.form-control.form-control-lg#exampleFormControlTextarea1(name="blog-body", type="text", rows=7) 
+                label Blog Body 
+                textarea.form-control.form-control-lg#exampleFormControlTextarea1(name="blogBody", type="text", rows=7) 
 
-            button(type="submit" class="btn btn-primary mb-2") Create Blog 
+            button(type="submit" class="btn btn-primary mb-2") Save Blog 
 
 
 

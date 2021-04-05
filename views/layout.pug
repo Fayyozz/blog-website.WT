@@ -6,16 +6,23 @@ html(lang="en")
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     body 
-        nav.navbar.navbar-expand-lg.navbar-light.bg-light
-            a.navbar-brand(href='/') My Blog
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+            a.navbar-brand(href='/') Angel Blog
 
             #navbarNav
                 ul.navbar-nav
-                    li.nav-item.active
-                        a.nav-link(href='#') Home
                     li.nav-item
-                        a.nav-link(href='/create') Create
+                        a.nav-link(href='/create') New Blog
                     li.nav-item
                         a.nav-link(href='/blogs') All Blogs
+                script(type='text/javascript').
+                    const currentLocation = location.href;
+                    const menuItem = document.querySelectorAll("a");
+                    const menuLength = menuItem.length
+                    for (let i = 0; i < menuLength; i++) {
+                        if(menuItem[i].href === currentLocation) {
+                            menuItem[i].classList.add("active")
+                        }
+                    }
 
         block content
