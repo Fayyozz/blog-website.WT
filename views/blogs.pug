@@ -3,7 +3,6 @@ extends layout.pug
 block content 
     #all-blogs 
         h1.display-5 All blogs 
-
         each blog in blogs 
             .blog-wrapper 
                 .blog-t-b
@@ -11,6 +10,7 @@ block content
                     a.blog.body= blog.blogBody
                 .buttons
                     a.btn.btn-success.btn-sm#btn-open(href=`/blogs/${blog.id}`) Read
-                    a.delete.btn.btn-outline-danger.btn-sm(href="#") Delete
+                    a.delete.btn.btn-outline-danger.btn-sm(href=`/${blog.id}/delete`) Delete
+        
 
 

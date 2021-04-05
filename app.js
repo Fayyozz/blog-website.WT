@@ -73,6 +73,23 @@ app.get("/blogs/:id", (req, res) => {
 })
 
 
+app.get("/:id/delete", (req, res) => {
+    const id = req.params.id
+    
+    fs.readFile("./data/blogs.json", (err, data) => {
+        if (err) throw err
+
+        const blogs = JSON.parse(data)
+        const filteredBlogs  = blogs.filter(blog => blog.id != id) 
+        fs.writeFile("./data/blogs.json", JSON.stringify(filteredBlogs), (err) => {
+            if (err) throw err
+
+            res.redirect(req.get('referer'));
+        })
+
+    })
+})
+
 app.listen(3000, err => {
     if (err) console.log(err);
 
